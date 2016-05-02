@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+    <link rel="stylesheet" href="css/mainstyle.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/angular-material.min.css" >
+</head>
+<body ng-app="BlankApp" ng-cloak>
+
+
+    <!-- for navmenu and subnav component -->
+    <div ng-include="'components/mainheader.html'" class="header-position" style="height:auto;"></div>
+    <!-- for carousel -->
+    <div ng-include="'components/share.html'"></div>
+    <div ng-include="'components/carousel.html'"></div>
+
+    <!-- for two column container -->
+    <div flex layout="row" layout-xs="column" layout-gt-lg="row" layout-align="start start" ng-controller="defaultCtrl" ng-style="{'padding-top':$mdMedia('gt-sm')?'60px':'10px','padding-bottom':$mdMedia('gt-sm')?'100px':'10px','padding-left':$mdMedia('gt-sm')?'100px':'10px','padding-right':$mdMedia('gt-sm')?'100px':'10px',}" layout-wrap>
+        <h2 layout="row" layout-align="start start" style="color:#00b2a9;font-family:franchise;font-size:40px;">ABOUT GATEWAY FOR CANCER RESEARCH</h2>
+        <p layout="row">We fund clinical trials for all types of cancers and prioritize only the most cutting-edge research that can help patients today. Gateway invests in next generation of potential breakthroughs in patient-centric cancer research in order to drive transformational advances in cancer treatment.</p>
+    </div>
+
+    <div layout="row" layout-xs="column" layout-gt-sm="row" layout-padding ng-controller="defaultCtrl" ng-style="{'padding-left':$mdMedia('gt-sm')?'100px':'10px','padding-right':$mdMedia('gt-sm')?'100px':'10px'}">
+        <div flex layout-padding layout-wrap>
+            <p ng-controller="defaultCtrl" ng-class="{'md-headline':$mdMedia('xs'),'md-headline':$mdMedia('gt-xs')}"style="margin-top:0px"><strong>Gateway is Unique:</strong> </p>
+            <ul style="margin-top:-25px">
+                <li>Patients have a voice.</li>
+                <li>Helping cancer patients feel better and live longer.</li>
+                <li>Gateway invests in breakthrough research that is both targeted and precise.</li>
+                <li>99 cents of every dollar Gateway receives goes directly to fund Phase I and Phase II cancer clinical trials.</li>
+                <br></br>
+                <a class="btn btn-action btn-style" href="" target="_self" style="font-family:Franchise;font-size:30px;" show-xs hide-gt-xs>Read More</a>
+            </ul>
+            <a class="btn btn-action btn-style" href="" target="_self" style="font-family:Franchise;font-size:30px;" hide-xs>Read More About Gateway</a>
+           
+        </div>
+        <div flex class="layout-align-center-center layout-padding">
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/Tp0Nb1mVGTs?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <section class="section-clinical wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background: url(https://www.gatewaycr.org/media/1266/bg_1.jpg) 50% 0px / cover no-repeat fixed;padding-top:100px;"layout-padding layout-wrap">
+        <div flex>
+            <h1 class="md-display-2" style="color:#fff;font-family:Franchise;text-align:center;">CANCER RESEARCH: FUNDED CLINICAL TRIALS</h1>
+            <div class="row ">
+                <div style="visibility: visible; animation-name: fadeInUp;"></div>
+            </div>
+        </div>
+    </section>
+
+    <div flex layout="row" layout-xs="column" layout-padding style="background-color:#00b2a9;color:#fff;" ng-style="{'min-height':$mdMedia('gt-sm')?'auto':'160px'}">
+        <div flex-xs ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'5px'}">
+            <p>Gateway focuses exclusively on patient-centered cancer research that improves treatment outcomes and restores the cancer patients’ quality of life.&nbsp;</p>
+            <p>Since its inception over 24 years ago, Gateway has funded over 120 innovative cancer research clinical trials. New trials are continuously added in a rolling grant application process.</p>
+        </div>
+        <div flex flex-xs ng-controller="defaultCtrl" ng-style="{'margin-top':$mdMedia('xs')?'20px':'0px', 'margin-bottom':$mdMedia('xs')?'30px':'0px', 'margin-right':$mdMedia('gt-xs')?'100px':'5px'}">
+            <md-button class="btn btn-action btn-style md-raised" href="" target="_self" style="font-family:Franchise;font-size:30px;border: 3px solid #fff;">Funded Clinical Trials</md-button>
+            <md-button class="btn btn-action btn-style md-raised" href="" target="_self" style="font-family:Franchise;font-size:30px;border: 3px solid #fff;">Apply for a Grant</md-button>
+        </div>
+    </div>
+
+
+    <div flex ng-controller="defaultCtrl" ng-style="{'margin':$mdMedia('gt-sm')?'5px 100px':'5px'}">
+        <ul flex layout="row" layout-xs="column" layout-padding style="list-style-type:none;">
+            <li flex>
+                <p class="clinical-title"><strong><a href="/research/funded-clinical-trials/clinical-trial?id=6153" class="research-title">A phase I and expanded imaging study of BLZ-100 in pediatric patients with primary brain tumors</a></strong></p>
+                <p class="research-author"><strong>Sarah Leary, MD</strong>,  University of Washington, Seattle Children’s Hospital</p>
+                <p>A phase I and expanded imaging study of BLZ-100 in pediatric patients with primary brain tumors)</p>
+            </li>
+            <md-divider vertical></md-divider>
+            <li flex>
+                <p class="clinical-title"><strong><a href="/research/funded-clinical-trials/clinical-trial?id=6156" class="research-title">A Phase II clinical trial to ameliorate symptoms of cognitive impairment with chemotherapy for breast cancer</a></strong></p>
+                <p class="research-author"><strong>Nagi Kumar, PhD, RD</strong>,  Moffitt Cancer Institute</p>
+                <p>A Phase II clinical trial to ameliorate symptoms of cognitive impairment in women treated with chemotherapy for breast cancer: the COGNUTRIN trial)</p>
+            </li>
+            <md-divider vertical></md-divider>
+            <li flex>
+                <p class="clinical-title"><strong><a href="/research/funded-clinical-trials/clinical-trial?id=6057" class="research-title">Phase II:  Study of pidilizumab in patients with diffuse large B-cell lymphoma following first remission</a></strong></p>
+                <p class="research-author"><strong>Jane Winter, MD &amp; Bryan Locke, MD</strong>,  Northwestern University</p>
+                <p>Phase II:  Study of pidilizumab in patients with diffuse large B-cell lymphoma following first remission)</p>
+            </li>
+
+        </ul>
+    </div>
+
+    <section flex data-mobileimage="img/fund-one-day.jpg" data-desktopimage="img/fund-one-day.jpg" style="background: url(&quot;img/fund-one-day.jpg&quot;) 100% 100% / cover no-repeat rgb(230, 226, 210);" layout="row" layout-padding layout-wrap>
+        <div flex ng-controller="defaultCtrl" ng-style="{'padding-top':$mdMedia('gt-sm')?'60px':'10px','padding-bottom':$mdMedia('gt-sm')?'100px':'10px','padding-left':$mdMedia('gt-sm')?'100px':'10px','padding-right':$mdMedia('gt-sm')?'450px':'10px'}">
+            <h2 class="md-display-1" style="color:#00b2a9;">FUND ONE DAY</h2>
+            <p>Gateway only invests in Phase I and Phase II human clinical trials where true innovation and transformational discoveries happen. Phase I and II clinical trials are severely underfunded, yet have the greatest patient impact in conquering cancer.</p>
+            <p>It costs just <strong>$16.56</strong>&nbsp;per patient per day in a Gateway-funded cancer clinical trial. Will you help us fund another day of research? Fund one day, one week or more!</p>
+            <md-button ng-controller="DialogCtrl" ng-click="showAdvanced($event)" class="btn-action btn-style md-raised" href="" target="_self">Fund One Day</md-button>
+       </div>
+    </section>
+ 
+    <div flex layout="row" layout-align="start start" ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'20px','margin-right':$mdMedia('gt-sm')?'100px':'20px'}">
+        <h2 class="md-display-1">CONNECT</h2>
+    </div>
+    <md-divider ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'20px','margin-right':$mdMedia('gt-sm')?'100px':'20px'}"></md-divider>
+    <div layout="row" layout-xs="column" layout-sm="column" layout-gt-sm="row" layout-wrap layout-padding ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'5px','margin-right':$mdMedia('gt-sm')?'100px':'5px'}">
+        <div flex>
+            <span class="button_card"><strong>In the News</strong></span><br>
+            <p>Gateway for Cancer Research’s annual Cures Gala, one of Chicago’s premier social events, was treated to surprise performances by R&B Music Hall of Famers, The Chi-Lites and the Grammy Hall of Fame group, The Temptations. The performances helped boost donations to fund innovative cancer clinical trial research.</p>
+            <md-button class="md-link-button" href="" style="color:#00b2a9;">More In the News</md-button>
+        </div>
+        <div flex>
+            <span class="button_card"><strong>Media</strong></span><br>
+            <p><strong>Julie Widmer</strong><br>julie.widmer@gatewaycr.org</p>
+            <md-button class="md-link-button" href="https://www.gatewaycr.org/about-gateway/media/" style="color:#00b2a9;">More Media</md-button>
+        </div>
+        <div flex>
+            <span class="button_card"><strong>Video Gallery</strong></span><br>
+            <p><strong>Success Story - Pediatric Clinical Trial</strong></p>
+            <a href="" rel="prettyPhoto[mixed]" md-button ng-controller="DialogCtrl" ng-click="showVideo($event)">
+                <img src="img/success-story-thumb.jpg">
+                <script type="text/ng-template" id="gallery.html">
+                    <iframe width="560" height="500" style="max-width:100%;height:auto;" src="https://www.youtube.com/embed/Tp0Nb1mVGTs?rel=0" frameborder="0" allowfullscreen></iframe>
+                </script>
+
+            </a>
+            <md-button class="md-link-button" href="" style="color:#00b2a9;">More Video Gallery</md-button>
+        </div>
+    </div>
+    
+    <md-divider hide-gt-xs ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'20px','margin-right':$mdMedia('gt-sm')?'100px':'20px'}" layout-padding></md-divider>
+    <div ng-include="'components/footer.html'" class="footer-section"> </div>
+    <!-- Angular Material requires Angular.js Libraries -->
+
+    <script src="js/angular.min.js"> </script>
+
+    <script src="js/angular-animate.min.js"> </script>
+    <script src="js/angular-aria.min.js"> </script>
+    <script src="js/angular-material.min.js">    </script>
+
+    <script src="js/angular-messages.min.js"></script>
+    <script src="js/mainlogic.js"></script>
+  
+   
+
+</body>
+</html>

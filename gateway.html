@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+    <link rel="stylesheet" href="css/mainstyle.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/angular-material.min.css">
+
+</head>
+<body ng-app="BlankApp" ng-cloak>
+
+
+    <!-- for navmenu and subnav component -->
+    <div ng-include="'components/mainheader.html'" class="header-position" style=""></div>
+    <div flex layout="row" layout-padding layout-wrap ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'20px','margin-right':$mdMedia('gt-sm')?'100px':'20px','margin-bottom':$mdMedia('gt-sm')?'20px':'5px'}">
+        <div flex="25" hide-xs hide-sm>
+            <div flex style="background-color:#ea5428!important;" ng-controller="listCtrl">
+                <md-list>
+                    <md-list-item ng-repeat="item in gateway" style="border-bottom: 1px dashed #f7b6ab;">
+                        <a class="main-nav-button md-button md-ink-ripple" href="" ng-transclude style="color:#fff;" md-button>{{item.name }}</a>
+                    </md-list-item>
+                </md-list>
+            </div>
+            <br>
+            <div flex style="background-color:#7f3264!important;color:#fff;">
+                <p class="md-title layout-align-center-center" style="margin-left:25px;">99 cents of every dollar received directly funds cancer clinical trials</p>
+            </div>
+            <div flex>
+                <center>
+                    <h2 style="color:#6fbf39">54</h2>
+                    <p>Current Gateway-funded clinical trials</p>
+                    <span flex></span>
+                    <h2 style="color:#6fbf39">140+</h2>
+                    <p>Clinical trials funded at leading institutions worldwide</p>
+                    <span flex></span>
+                    <h2 style="color:#6fbf39">16.56</h2>
+                    <p>Funds one patient for one day at a Gateway-funded clinical trial</p>
+                    <span flex></span>
+                </center>
+            </div>
+        </div>
+        <div flex>
+            <img alt="About.jpg" src="img/about_gateway.jpg" style="max-width:100%;height:auto;"  ng-controller="defaultCtrl" ng-style="{'margin-top':$mdMedia('xs')?'10px':'auto'}">
+            <p><strong>Be a Gateway<strong>—</strong>be open to a better way.</strong> Join Gateway's mission to fund breakthrough treatment options for cancer patients that offer real possibilities for feeling and getting better.</p>
+            <p><strong>Be involved</strong><strong>—plan your own DIY fundraiser</strong>. There are many creative ways to <em>Be a Gateway</em> and support cancer research, and you don’t need a ton of experience to make your fundraising event a success—just the commitment and passion to make it happen. Create your own event for family and friends, or join another DIY event. Get started by visiting our <a href="/be-a-gateway/diy-fundraisers/" target="_blank">DIY fundraiser</a> page today.</p>
+            <p><strong>Demand better options for cancer patients—donate your athletic skills to Team Demand</strong>. Gateway's Team Demand hosts a variety of athletic events from marathons to volleyball tournaments. Check out our <a href="/be-a-gateway/team-demand-events/" target="_blank">Team Demand</a> page for upcoming events. &nbsp; &nbsp;</p>
+            <p><strong>Our Cause Partners generously donate a portion of the income they receive for certain products to Gateway</strong>. You can help support cancer research by shopping with <a href="/be-a-gateway/cause-partners/" target="_blank">Gateway Cause Partners</a> today!</p>
+            <p>With every dollar you donate, you invest in more life. There's no way around it but there's a better way through it. <strong>Be a Gateway. <br></strong></p>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <div ng-include="'components/footer.html'"> </div>
+    <!-- Angular Material requires Angular.js Libraries -->
+
+    <script src="js/angular.min.js"> </script>
+
+    <script src="js/angular-animate.min.js"> </script>
+    <script src="js/angular-aria.min.js"> </script>
+    <script src="js/angular-material.min.js">    </script>
+
+    <script src="js/angular-messages.min.js"></script>
+   
+
+    <script src="js/mainlogic.js"></script>
+
+
+</body>
+</html>

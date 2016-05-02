@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+    <link rel="stylesheet" href="css/mainstyle.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/angular-material.min.css">
+
+</head>
+<body ng-app="BlankApp" ng-cloak>
+
+
+    <!-- for navmenu and subnav component -->
+    <div ng-include="'components/mainheader.html'" class="header-position" style=""></div>
+    <div flex layout="row" layout-align="start start" layout-padding layout-wrap ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'20px','margin-right':$mdMedia('gt-sm')?'100px':'20px','margin-bottom':$mdMedia('gt-sm')?'20px':'5px'}">
+        <div flex="25" hide-xs hide-sm>
+            <div class="sidenav" flex style="background-color:#ea5428!important;" ng-controller="listCtrl">
+                <md-list>
+                    <md-list-item ng-repeat="item in way" style="border-bottom: 1px dashed #f7b6ab;">
+                        <a class="main-nav-button md-button md-ink-ripple" href="" ng-transclude style="color:#fff;" md-button><span class="ng-scope">{{item.name }}</span></a>
+                    </md-list-item>
+                </md-list>
+            </div>
+            <br>
+            <div flex style="background-color:#7f3264!important;color:#fff;">
+                <p class="md-title layout-align-center-center" style="margin-left:25px;">99 cents of every dollar received directly funds cancer clinical trials</p>
+            </div>
+            <div flex>
+                <center>
+                <h2 style="color:#6fbf39">54</h2>
+                <p>Current Gateway-funded clinical trials</p>
+                <span flex></span>
+                <h2 style="color:#6fbf39">140+</h2>
+                <p>Clinical trials funded at leading institutions worldwide</p>
+                <span flex></span>
+                <h2 style="color:#6fbf39">16.56</h2>
+                <p>Funds one patient for one day at a Gateway-funded clinical trial</p>
+                <span flex></span>
+                </center>
+            </div>
+        </div>
+        <div flex>
+            <img alt="About.jpg" src="img/about_gateway.jpg" style="max-width:100%;height:auto;"  ng-controller="defaultCtrl" ng-style="{'margin-top':$mdMedia('xs')?'10px':'auto'}">
+            <p>Your support allows Gateway to expand its commitments to patients and investigators by increasing our investments in breakthrough cancer research. 
+            <strong>Thanks to our compassionate, generous supporters, Gateway can help people living with cancer today improve and prolong their lives tomorrow.</strong>
+             Your contribution is vital to our mission. From 
+             <a class="link1" href="" target="_blank">Tribute Gifts</a>
+             that honor and memorialize to 
+            <a class="link1" href="" target="_blank">Fund One Day</a>
+            , we offer many ways for you to give.</p>
+            <div flex class="layout-row layout-xs-column layout-padding ">
+            <md-card style="background-color:#f1f1f1;border:1px solid #c7c7c7; padding:8px;">
+                <h2 class="title" style="color:#47e1db;">MAKE A GIFT</h2>
+                <p>Every gift counts. Make a donation and help Gateway fund breakthrough clinical trials that help people living with cancer to feel better and live longer. Give today.</p>
+                <md-button class="md-raised md-btn" style="background-color:#47e1db;color:#fff;">DONATE</md-button>
+            </md-card>
+            <md-card style="background-color:#f1f1f1;border:1px solid #c7c7c7; padding:8px;">
+                <h2 class="title" style="color:#47e1db;">MAKE A GIFT</h2>
+                <p>Every gift counts. Make a donation and help Gateway fund breakthrough clinical trials that help people living with cancer to feel better and live longer. Give today.</p>
+                <md-button class="md-raised md-btn" style="background-color:#47e1db;color:#fff;">DONATE</md-button>
+            </md-card>
+            <md-card style="background-color:#f1f1f1;border:1px solid #c7c7c7; padding:8px;">
+                <h2 class="title" style="color:#47e1db;">MAKE A GIFT</h2>
+                <p>Every gift counts. Make a donation and help Gateway fund breakthrough clinical trials that help people living with cancer to feel better and live longer. Give today.</p>
+                <md-button class="md-raised md-btn" style="background-color:#47e1db;color:#fff;">DONATE</md-button>
+            </md-card>
+            </div>
+            <h2  style="color:#47e1db;" class="layout-align-center-center">Other Ways To Give</h2>
+            <p>Gateway for Cancer Research is a not-for-profit 501 (c)(3) organization. To make a donation by mail, please send your check to: Gateway for Cancer Research 1336 Basswood Rd., Schaumburg, IL 60173. To make a donation by phone please call: 1.888.221.2873.</p>
+        </div>
+    </div>
+    <div ng-include="'components/footer.html'"> </div>
+    <!-- Angular Material requires Angular.js Libraries -->
+
+    <script src="js/angular.min.js"> </script>
+
+    <script src="js/angular-animate.min.js"> </script>
+    <script src="js/angular-aria.min.js"> </script>
+    <script src="js/angular-material.min.js">    </script>
+
+    <script src="js/angular-messages.min.js"></script>
+
+    <script src="js/mainlogic.js"></script>
+
+</body>
+</html>

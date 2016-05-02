@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+    <link rel="stylesheet" href="css/mainstyle.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/angular-material.min.css">
+
+</head>
+<body ng-app="BlankApp" ng-cloak>
+
+
+    <!-- for navmenu and subnav component -->
+    <div ng-include="'components/mainheader.html'" class="header-position" style=""></div>
+    <div flex layout="row" layout-align="start start" layout-padding layout-wrap ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'20px','margin-right':$mdMedia('gt-sm')?'100px':'20px'}">
+        <div flex="25" hide-xs hide-sm>
+            <div flex style="background-color:#ea5428!important;" ng-controller="listCtrl">
+                <md-list>
+                    <md-list-item ng-repeat="item in research" style="border-bottom: 1px dashed #f7b6ab;">
+                        <div class="md-list-item-text md-raised">
+                            <a class="main-nav-button md-button md-ink-ripple" href="" ng-transclude style="color:#fff;">{{item.name }}</a>
+                        </div>
+                    </md-list-item>
+                </md-list>
+            </div>
+            <br>
+            <div flex style="background-color:#7f3264!important;color:#fff;">
+                <p class="md-title layout-align-center-center" style="margin-left:25px;">99 cents of every dollar received directly funds cancer clinical trials</p>
+            </div>
+            <div flex>
+                <center>
+                    <h2 style="color:#6fbf39">54</h2>
+                    <p>Current Gateway-funded clinical trials</p>
+                    <span flex></span>
+                    <h2 style="color:#6fbf39">140+</h2>
+                    <p>Clinical trials funded at leading institutions worldwide</p>
+                    <span flex></span>
+                    <h2 style="color:#6fbf39">16.56</h2>
+                    <p>Funds one patient for one day at a Gateway-funded clinical trial</p>
+                    <span flex></span>
+                </center>
+            </div>
+        </div>
+        <div flex>
+            <img alt="About.jpg" style="max-width:100%;height:auto;" src="img/about_gateway.jpg"  ng-controller="defaultCtrl" ng-style="{'margin-top':$mdMedia('xs')?'10px':'auto'}">
+            <p>Many in the cancer research field support patient-centered research—we have taken this commitment to the next level by integrating it into everything we do. Gateway's research vision is to support Phase I and Phase II clinical trials that <strong>effectively tailor cancer treatment to the unique biology, environment, and needs of each patient.<br><br></strong>We incentivize researchers to adopt patient-centered outcomes, and carefully measure the degree to which they, and we, have placed patients at the center of our work. <strong>Patient advocates sit at every level of our organization</strong>, up to and including the <a href="/about-gateway/board-of-directors/" target="_blank">Board of Directors</a>.<br><br>Our patient-centered approach is the primary and largest differentiator of our work. Gateway's clinical trials focus includes:</p>
+            <ul >
+                <li><strong>Next Generation Science:</strong> Next generation science is research that has strong potential for a significant break-through in patient-centered research. These trials focus on healing the patient even as they treat the disease.<br><br></li>
+                <li><strong>Tailored Therapies</strong>: Gateway has always believed in tailoring therapy to the unique biology of individual patients—now, with the level of genetic and cell protein data available to us, we can invest in research that is both tailored and precise. This is why we are investing in therapies customized to the unique biology, characteristics and environment of each patient.<br><br></li>
+                <li><strong>Patient Enrollment/Ages &amp; Stages</strong>: In particular, our funding supports patient enrollment in clinical trials so more people with cancer can access the treatment they need. Our funded trials represent people of all ages, at any stage of cancer.</li>
+            </ul>
+            <h1 style="color: #7cb540; font-weight: 500; font-size: 24px; font-family: Oswald,sans-serif;">Gateway's Focus on Patient Voice</h1>
+            <p>Research proposals that meaningfully involve patients by amplifying the importance of their voice are given special consideration throughout our process.</p>
+            <ul id="listBullet">
+                <li><strong>Gateway funded trials must involve patient advocates</strong>: We require investigators consult regularly with patient representatives and advocates and gather their input into the trial design. When we select the projects we will fund, we require Principal Investigators to report on their interaction with patient advocates and how they have incorporated their feedback into the trial.<br><br></li>
+                <li><strong>Gateway funded trials should maintain or improve quality of life</strong>: Gateway asks Principal Investigators to measure quality of life based on the self-reports of patients. Quality of life is defined on an individual basis, and incorporates many aspects of an individual’s life, including relationships, sense of well-being, career, family, and financial status, among others.<br><br></li>
+                <li><strong>Gateway funded trials should closely track the burden of treatment on patients</strong>: Gateway asks Principal Investigators to measure the degree to which number and duration of appointments, hospitalizations, work missed and financial costs accumulate into a burden that can reduce a patient’s quality of life.<br><br></li>
+                <li><strong>Gateway funded trials should maintain or increase a patient’s sense of hope for the future</strong>: Gateway asks investigators to use a scientifically validated tool, the <em>Herth Hope Index</em>, to measure a patient’s positive outlook, goal-setting, isolation, optimism, inner strength, sense of joy, feeling about the future and feeling of self value.</li>
+            </ul>
+            <h1 style="color: #7cb540; font-weight: 500; font-size: 24px; font-family: Oswald,sans-serif;">Together, We Can Conquer Cancer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h1>
+            <p>Patients who participate in a clinical trial plays a critical role in conquering cancer <em>on behalf of all of us</em>. At Gateway, we feel a deep responsibility to every one of these patients to create a shared sense of urgency in the field and to improve the overall standard of care by driving transformative discoveries. <br><br><a href="/donate/" target="_blank"><em><strong>Be a Gateway. Give Today!</strong></em></a><br><br><br></p>
+        </div>
+    </div>
+    <div ng-include="'components/footer.html'"> </div>
+    <!-- Angular Material requires Angular.js Libraries -->
+
+    <script src="js/angular.min.js"> </script>
+
+    <script src="js/angular-animate.min.js"> </script>
+    <script src="js/angular-aria.min.js"> </script>
+    <script src="js/angular-material.min.js">    </script>
+
+    <script src="js/angular-messages.min.js"></script>
+
+
+    <script src="js/mainlogic.js"></script>
+  
+
+</body>
+</html>

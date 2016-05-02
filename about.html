@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+    <link rel="stylesheet" href="css/mainstyle.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/angular-material.min.css">
+</head>
+<body ng-app="BlankApp" ng-cloak>
+
+
+    <!-- for navmenu and subnav component -->
+    <div ng-include="'components/mainheader.html'" class="header-position" style=""></div>
+    <div flex layout="row" layout-padding layout-wrap ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'100px':'20px','margin-right':$mdMedia('gt-sm')?'100px':'20px','margin-bottom':$mdMedia('gt-sm')?'20px':'5px'}">
+            <div flex="25" hide-xs hide-sm >
+                <div flex style="background-color:#ea5428!important;" ng-controller="listCtrl">
+                    <md-list>
+                        <md-list-item ng-repeat="item in about" style="border-bottom: 1px dashed #f7b6ab;">
+                                <a class="md-button md-ink-ripple" href="" ng-transclude style="color:#fff;" md-button>{{item.name }}</a>
+                        </md-list-item>
+                    </md-list>
+                </div>
+                <br>
+                <div flex style="background-color:#7f3264!important;color:#fff;" layout-padding>
+                    <p class="md-title layout-align-center-center">99 cents of every dollar received directly funds cancer clinical trials</p>
+                </div>
+                <div flex>
+                    <center>
+                        <h2 style="color:#6fbf39">54</h2>
+                        <p>Current Gateway-funded clinical trials</p>
+                        <span flex></span>
+                        <h2 style="color:#6fbf39">140+</h2>
+                        <p>Clinical trials funded at leading institutions worldwide</p>
+                        <span flex></span>
+                        <h2 style="color:#6fbf39">16.56</h2>
+                        <p>Funds one patient for one day at a Gateway-funded clinical trial</p>
+                        <span flex></span>
+                    </center>
+                </div>
+            </div>
+            <div flex>
+                <img alt="About.jpg" src="img/about_gateway.jpg" style="max-width:100%;height:auto;"   ng-controller="defaultCtrl" ng-style="{'margin-top':$mdMedia('xs')?'10px':'auto'}">
+                <h1 style="color: #7cb540; font-weight: 500; font-size: 24px; font-family: Oswald,sans-serif;">Vision</h1>
+                <p>Our vision is to shape a world in which a cancer diagnosis is no longer feared.</p>
+                <h1 style="color: #7cb540; font-weight: 500; font-size: 24px; font-family: Oswald,sans-serif;">Mission</h1>
+                <p>Our mission is to fund meaningful and breakthrough clinical trials worldwide that help people living with cancer to feel better, live longer and conquer cancer TODAY!</p>
+                <h1 style="color: #7cb540; font-weight: 500; font-size: 24px; font-family: Oswald,sans-serif;">How Gateway is Unique&nbsp;</h1>
+                <p><strong>Patients have a voice.</strong>&nbsp;Gateway engages patient representatives of every level of the organization, up to and including our <a href="https://www.gatewaycr.org/about-gateway/board-of-directors/" target="_top" title="Board of Directors">Board of Directors</a>. Patient voice helps develop Gateway investment priorities, and as part of Gateway grant agreements, investigators are asked to reach this same high standard of engagement with patients.<br><br><strong>Cancer patients feel better and live longer.</strong>&nbsp;Gateway's quality of life and burden of treatment focus sets it apart from other cancer research organizations...<em>&nbsp;our goal is to heal the patient even as we conquer the disease</em>. For individual patients, as well as the future of cancer treatment, clinical trials represent the best probability of ending cancer without reducing quality of life to an unacceptable degree. <br><br><strong>Gateway invests in breakthrough research that is both targeted and precise</strong>. Most cancer drugs do not receive a positive response from the majority of patients due to unique genetics and differences among individuals. With the level of genetic and cell protein data now available, Gateway invests in therapies targeted to the specific biology, characteristics and environment of each patient.&nbsp; <br><br><strong>99 cents of every dollar</strong><strong>&nbsp;Gateway receives goes directly to fund Phase I and Phase II clinical trials</strong>. The research Gateway funds cannot be overstated<em>. Phase I and Phase II clinical trials are underfunded, yet have the greatest patient impact in conquering cancer. </em>Thanks to generous underwriting, 99 cents of every dollar received funds cancer clinical trials. Gateway believes that if you donate to cancer research, your donation should go to cancer research.<br><br><strong><img style="width: 97px; height: 71px;max-width:100%;height:auto;" src="img/guidestar2.png?width=97&amp;height=71" alt="GuideStar Gold" align="right" data-id="7688">By demonstrating a commitment to transparency, Gateway has achieved Gold Participant status on Guidestar</strong> – a 501(c)(3) charity that collects, organizes, and presents publicly available information on nonprofit organizations.<br><br></p>
+                <h5><br>Gateway for Cancer Research is a nonprofit 501(c)(3) organization committed to funding innovative cancer research studies that help people living with cancer to feel better, live longer and conquer cancer TODAY! Thanks to generous underwriting by Cancer Treatment Centers of America®, 99 cents of every dollar Gateway receives directly funds phase I and phase II cancer clinical trials at leading research institutions across the country and abroad. Since 1991 Gateway has supported more than 120 clinical trials and funded millions in leading-edge research, including blending the best of conventional, and complementary and alternative therapies. Get involved today by visiting GatewayCR.org, like us on Facebook at facebook.com/demandcures and join the conversation on Twitter @DemandCures, #BeAGateway.</h5>
+                <img class="img-responsive" src="img/spacer.gif" style="max-width:100%;height:auto;">
+            </div>
+    </div>
+    <div ng-include="'components/footer.html'"> </div>
+    <!-- Angular Material requires Angular.js Libraries -->
+
+    <script src="js/angular.min.js"> </script>
+
+    <script src="js/angular-animate.min.js"> </script>
+    <script src="js/angular-aria.min.js"> </script>
+    <script src="js/angular-material.min.js">    </script>
+
+    <script src="js/angular-messages.min.js"></script>
+   
+
+    <script src="js/mainlogic.js"></script>
+    
+
+</body>
+</html>
