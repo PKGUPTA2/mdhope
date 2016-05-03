@@ -9,6 +9,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <link rel="stylesheet" href="css/angular-material.min.css">
+
 </head>
 <body ng-app="BlankApp" ng-cloak style="background-color:#DDE7ED;">
 
@@ -17,24 +18,14 @@
     <div ng-include="'components/mainheader.html'" class="header-position" style=""></div>
     <div ng-include="'components/share.html'"></div>
     <div flex layout="row" layout-xs="column" layout-padding ng-controller="defaultCtrl" ng-style="{'padding-left':$mdMedia('gt-sm')?'150px':'10px','padding-right':$mdMedia('gt-sm')?'150px':'10px'}" style="background-color:#DDE7ED;">
-        <div flex="75" flex-xs="100" flex-sm="100">
-            <h1 class="md-title">ABOUT H.O.P.E. TEAM</h1>
-            <p><span>Founded in May 2009, the H.O.P.E. Team is a nonprofit organiza</span><span >tion&nbsp;which exists to support</span><span >patients</span><span >&nbsp;at Cancer Treatment Centers of&nbsp;America® and Western Regional Medical Center.&nbsp;We strive to provide Help, Optimism, Peace and Encouragement&nbsp;for cancer patients and their</span><span >families. Through</span><span >&nbsp;the H.O.P.E. Team, community members are an integral component&nbsp;of the care team that has made Cancer Treatment Centers of America&nbsp;synonymous with quality and compassion.</span></p>
-            <p><span>The H.O.P.E. Team provides a volunteer service program at CTCA which&nbsp;enhances the whole-person care concept that Cancer Treatment Centers&nbsp;of America refers to as the Mother Standard®. This guiding principle is a&nbsp;nurturing approach carried out by all Cancer Treatment Centers of America employees. The Mother Standard® reflects how they would want&nbsp;their mothers, fathers, brothers or sisters to be treated</span><span >,</span><span >&nbsp;if they had cancer.</span></p>
-            <p><span>We are excited to be able to bring in a professional service team of&nbsp;volunteers that will impact the patients of Western Regional Medical Center and their families. In addition to providing an effective volunteer team at the hospital, the H.O.P.E. Team is involved in communities throughout Arizona to share&nbsp;information about cancer awareness and prevention.</span></p>
-            <p><span>Through the H.O.P.E. Team’s&nbsp;</span><a href="http://www.hopeteamaz.org/h-o-p-e-team-wish-list/"><span class="s6" style="font-style: italic; color: #0000ff;">Wish List</span></a><span >, the community is able to donate&nbsp;needed items to support the patients at CTCA. For ideas on how to hold a Wish List drive with your group, contact the H.O.P.E. Team Manager at 623-207-3545.</span></p>
-            <p><span>100% of financial donations to the H.O.P.E. Team go directly to providing&nbsp;activities and supplies for the patients at CTCA and are tax deductible. The H.O.P.E. Team is a 501</span><span >(</span><span >c</span><span >)(</span><span >3</span><span >)</span><span >&nbsp;nonprofit organization (Tax ID#27-0325096).</span></p>
-            <p><span>For more information, please contact:</span></p>
-            <p>
-                <span>H.O.P.E. Team</span><br>
-                <span>14200 W.&nbsp;</span><br>
-                <span>Celebrate Life Way</span><br>
-                <span>Goodyear, AZ 85338</span><br>
-                <span>623-207-3545</span><br>
-                <span>HOPEteam@ctca-hope.com</span>
-            </p>
+        <div flex="75" layout="column" flex-xs="100">
+            <h1 class="md-title">A Privilege and an Honor</h1>
+            <div flex layout="row" layout-padding>
+                <img src="http://www.hopeteamaz.org/wp-content/uploads/2015/01/Mike-Johnson-225x300.jpg" alt="Mike Johnson" width="225" height="300" srcset="http://www.hopeteamaz.org/wp-content/uploads/2015/01/Mike-Johnson-225x300.jpg 225w, http://www.hopeteamaz.org/wp-content/uploads/2015/01/Mike-Johnson-769x1024.jpg 769w" sizes="(max-width: 225px) 100vw, 225px" scale="0">
+                <p flex>To be a volunteer at Cancer Treatment Centers of America® with the H.O.P.E. Team is a privilege, honor, rewarding, and humbling experience. To be with the other dedicated, friendly, caring volunteers, stakeholders, and most importantly, the cancer patients, is very uplifting and heartwarming.&nbsp; The atmosphere is filled with warmth, hope, dedication, and sincere compassion for all involved.&nbsp; I highly recommend it to those looking for a meaningful experience, where you are guaranteed to receive more than you give.&nbsp; I am absolutely, positively convinced that Mary Stephenson could not be more proud of what her son, Richard, has achieved in creating such a positive atmosphere and environment, for this important work of curing, caring, and respecting people, who are struggling in the fight of their lives.</p>
+            </div>
         </div>
-        <div flex hide-xs hide-sm>
+        <div flex hide-xs hide-sm layout="column">
             <md-card layout-padding>
                 <md-card-title>
                     <md-card-title-text>
@@ -96,10 +87,10 @@
     <script src="js/angular-material.min.js">    </script>
 
     <script src="js/angular-messages.min.js"></script>
-   
+
 
     <script src="js/mainlogic.js"></script>
-    
+
 
 </body>
 </html>

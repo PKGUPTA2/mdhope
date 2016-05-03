@@ -9,6 +9,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <link rel="stylesheet" href="css/angular-material.min.css">
+
 </head>
 <body ng-app="BlankApp" ng-cloak style="background-color:#DDE7ED;">
 
@@ -17,24 +18,24 @@
     <div ng-include="'components/mainheader.html'" class="header-position" style=""></div>
     <div ng-include="'components/share.html'"></div>
     <div flex layout="row" layout-xs="column" layout-padding ng-controller="defaultCtrl" ng-style="{'padding-left':$mdMedia('gt-sm')?'150px':'10px','padding-right':$mdMedia('gt-sm')?'150px':'10px'}" style="background-color:#DDE7ED;">
-        <div flex="75" flex-xs="100" flex-sm="100">
-            <h1 class="md-title">ABOUT H.O.P.E. TEAM</h1>
-            <p><span>Founded in May 2009, the H.O.P.E. Team is a nonprofit organiza</span><span >tion&nbsp;which exists to support</span><span >patients</span><span >&nbsp;at Cancer Treatment Centers of&nbsp;America® and Western Regional Medical Center.&nbsp;We strive to provide Help, Optimism, Peace and Encouragement&nbsp;for cancer patients and their</span><span >families. Through</span><span >&nbsp;the H.O.P.E. Team, community members are an integral component&nbsp;of the care team that has made Cancer Treatment Centers of America&nbsp;synonymous with quality and compassion.</span></p>
-            <p><span>The H.O.P.E. Team provides a volunteer service program at CTCA which&nbsp;enhances the whole-person care concept that Cancer Treatment Centers&nbsp;of America refers to as the Mother Standard®. This guiding principle is a&nbsp;nurturing approach carried out by all Cancer Treatment Centers of America employees. The Mother Standard® reflects how they would want&nbsp;their mothers, fathers, brothers or sisters to be treated</span><span >,</span><span >&nbsp;if they had cancer.</span></p>
-            <p><span>We are excited to be able to bring in a professional service team of&nbsp;volunteers that will impact the patients of Western Regional Medical Center and their families. In addition to providing an effective volunteer team at the hospital, the H.O.P.E. Team is involved in communities throughout Arizona to share&nbsp;information about cancer awareness and prevention.</span></p>
-            <p><span>Through the H.O.P.E. Team’s&nbsp;</span><a href="http://www.hopeteamaz.org/h-o-p-e-team-wish-list/"><span class="s6" style="font-style: italic; color: #0000ff;">Wish List</span></a><span >, the community is able to donate&nbsp;needed items to support the patients at CTCA. For ideas on how to hold a Wish List drive with your group, contact the H.O.P.E. Team Manager at 623-207-3545.</span></p>
-            <p><span>100% of financial donations to the H.O.P.E. Team go directly to providing&nbsp;activities and supplies for the patients at CTCA and are tax deductible. The H.O.P.E. Team is a 501</span><span >(</span><span >c</span><span >)(</span><span >3</span><span >)</span><span >&nbsp;nonprofit organization (Tax ID#27-0325096).</span></p>
-            <p><span>For more information, please contact:</span></p>
-            <p>
-                <span>H.O.P.E. Team</span><br>
-                <span>14200 W.&nbsp;</span><br>
-                <span>Celebrate Life Way</span><br>
-                <span>Goodyear, AZ 85338</span><br>
-                <span>623-207-3545</span><br>
-                <span>HOPEteam@ctca-hope.com</span>
-            </p>
+        <div flex="75" layout="column" flex-xs="100" flex-sm="100">
+            <h1 class="md-title">FAQ</h1>
+            <ul>
+                <li><span style="font-weight: bold;">What does H.O.P.E. stand for?&nbsp;</span></li>
+                <li><span>H.O.P.E. stands for the four things we strive to provide to cancer patients and their families: Help, Optimism, Peace, and Encouragement.</span></li>
+                <li><span>&nbsp;</span></li>
+                <li><span style="font-weight: bold;">Is there an age restriction to volunteer?&nbsp;</span></li>
+                <li><span>H.O.P.E. Team members must be at least 18 years of age.</span><span>&nbsp;&nbsp;If you are interested in volunteering and under the age of 18, check out our Teen Leadership Program.</span><a name="_GoBack"></a></li>
+                <li><span>&nbsp;</span></li>
+                <li><span style="font-weight: bold;">What are the steps to apply to be&nbsp;</span><span style="font-weight: bold;">a</span><span style="font-weight: bold;">&nbsp;H.O.P.E. Team member?&nbsp;</span></li>
+                <li><span>1. Complete online application</span></li>
+                <li><span>2. Attend Volunteer Information/Orientation session (email invite will be sent when application is submitted).</span></li>
+                <li><span>3. Complete paperwork and processes covered in the Information/Orientation session and complete a shadow session that will be set up individually.</span></li>
+                <li><span>&nbsp;</span></li>
+                <li><span style="font-weight: bold;">Together we can make a difference!</span></li>
+            </ul>
         </div>
-        <div flex hide-xs hide-sm>
+        <div flex hide-xs hide-sm layout="column">
             <md-card layout-padding>
                 <md-card-title>
                     <md-card-title-text>
@@ -96,10 +97,8 @@
     <script src="js/angular-material.min.js">    </script>
 
     <script src="js/angular-messages.min.js"></script>
-   
 
     <script src="js/mainlogic.js"></script>
-    
 
 </body>
 </html>
