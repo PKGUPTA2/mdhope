@@ -16,7 +16,7 @@
     <!-- for navmenu and subnav component -->
     <div ng-include="'components/mainheader.html'" class="header-position" style=""></div>
     <div ng-include="'components/share.html'"></div>
-    <div flex layout="row" layout-xs="column" layout-padding ng-controller="defaultCtrl" ng-style="{'padding-left':$mdMedia('gt-sm')?'150px':'10px','padding-right':$mdMedia('gt-sm')?'150px':'10px'}" style="background-color:#DDE7ED;">
+    <md-card layout="row" layout-xs="column" layout-padding ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'150px':'10px','margin-right':$mdMedia('gt-sm')?'150px':'10px','min-height':$mdMedia('sm')?'700px':'1250px'}" style="overflow:hidden; margin-bottom:30px;">
         <div flex="75" flex-xs="100" flex-sm="100">
             <h1 class="md-title">ABOUT H.O.P.E. TEAM</h1>
             <p><span>Founded in May 2009, the H.O.P.E. Team is a nonprofit organiza</span><span >tion&nbsp;which exists to support</span><span >patients</span><span >&nbsp;at Cancer Treatment Centers of&nbsp;America® and Western Regional Medical Center.&nbsp;We strive to provide Help, Optimism, Peace and Encouragement&nbsp;for cancer patients and their</span><span >families. Through</span><span >&nbsp;the H.O.P.E. Team, community members are an integral component&nbsp;of the care team that has made Cancer Treatment Centers of America&nbsp;synonymous with quality and compassion.</span></p>
@@ -34,7 +34,7 @@
                 <span>HOPEteam@ctca-hope.com</span>
             </p>
         </div>
-        <div flex hide-xs hide-sm>
+        <div flex flex-xs="100" flex-sm="100" hide-xs hide-sm>
             <md-card layout-padding>
                 <md-card-title>
                     <md-card-title-text>
@@ -85,7 +85,8 @@
 
             </md-card>
         </div>
-    </div>
+    </md-card>
+    <div ng-include="'components/mobtab.html'" hide-gt-xs></div>
     <div ng-include="'components/footer.html'"> </div>
     <!-- Angular Material requires Angular.js Libraries -->
 

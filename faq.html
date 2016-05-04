@@ -17,7 +17,7 @@
     <!-- for navmenu and subnav component -->
     <div ng-include="'components/mainheader.html'" class="header-position" style=""></div>
     <div ng-include="'components/share.html'"></div>
-    <div flex layout="row" layout-xs="column" layout-padding ng-controller="defaultCtrl" ng-style="{'padding-left':$mdMedia('gt-sm')?'150px':'10px','padding-right':$mdMedia('gt-sm')?'150px':'10px'}" style="background-color:#DDE7ED;">
+    <md-card flex layout="row" layout-xs="column" layout-padding ng-controller="defaultCtrl" ng-style="{'margin-left':$mdMedia('gt-sm')?'150px':'10px','margin-right':$mdMedia('gt-sm')?'150px':'10px','min-height':$mdMedia('sm')?'700px':'1250px'}" style="overflow:hidden; margin-bottom:30px;">
         <div flex="75" layout="column" flex-xs="100" flex-sm="100">
             <h1 class="md-title">FAQ</h1>
             <ul>
@@ -86,7 +86,8 @@
 
             </md-card>
         </div>
-    </div>
+    </md-card>
+    <div ng-include="'components/mobtab.html'" hide-gt-xs></div>
     <div ng-include="'components/footer.html'"> </div>
     <!-- Angular Material requires Angular.js Libraries -->
 
